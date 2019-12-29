@@ -33,7 +33,7 @@
       <h3>Pufuのプラン</h3>
       <b-row class="justify-content-md-center">
         <b-col md="4">
-          <b-card no-body bg-variant="default" header="フリープラン" class="text-center">
+          <b-card no-body bg-variant="default" header="フリープラン（無料）" class="text-center">
             <b-list-group>
               <b-list-group-item>
                 <b>プロジェクト作成</b><br>
@@ -91,7 +91,7 @@
       </b-row>
       <b-row>
         <b-col>
-          Powered by <a href="https://dyson-yamashita.github.io/winkry-site/">Winkry</a>
+          Powered by <a href="https://github.com/dyson-yamashita">dyson-yamashita</a>
         </b-col>
       </b-row>
     </b-container>
