@@ -2,14 +2,12 @@
   <div>
     <b-jumbotron>
       <template v-slot:header>Pufu&nbsp;<img :src="pufu_image" width="120"></template>
-      <template v-slot:lead>
-          すべての人にプロジェクトの体験を。     
-      </template>
+      <template v-slot:lead>すべての人にプロジェクトの体験を。</template>
       <p>
           プロジェクトに携わる人に向けた<br>
           プロジェクト譜ツール
       </p>
-      <b-button variant="outline-secondary" href="#">Pufuを利用する（準備中）</b-button>
+      <b-button size="lg" variant="outline-secondary" href="https://console.pufu-online.net/">Pufuを利用する</b-button>
     </b-jumbotron>
     <h2>Pufuの特徴</h2>
     <b-container class="bv-context-row">
@@ -25,7 +23,7 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card　title="ポータビリティ" class="mb-2 context-card">
+          <b-card title="ポータビリティ" class="mb-2 context-card">
             <p>PCブラウザに加えてモバイルブラウザーに対応し、場所を問わずプロジェクト譜を編集、閲覧</p>
           </b-card>
         </b-col>
@@ -37,11 +35,11 @@
             <b-list-group>
               <b-list-group-item>
                 <b>プロジェクト作成</b><br>
-                5プロジェクトまで
+                10プロジェクトまで
               </b-list-group-item>
               <b-list-group-item>
                 <b>共有可能ユーザー</b><br>
-                3ユーザー/1プロジェクト
+                5ユーザー/1プロジェクト
               </b-list-group-item>
               <b-list-group-item>
                 <b>参加可能プロジェクト</b><br>
@@ -58,17 +56,18 @@
             <b-list-group horizontal>
               <b-list-group-item class="flex-fill">
                 <p>
-                  <b>PC ブラウザ<br>(Windows 10)</b>
+                  <b>PC ブラウザ<br>Windows 10</b>
                 </p>
                 <img :src="chrome_image"/>
                 <p>Chrome</p>
               </b-list-group-item >
               <b-list-group-item class="flex-fill">
                 <p>
-                  <b>モバイルブラウザ<br>(iOS)</b>
+                  <b>モバイルブラウザ<br>iOS</b>
                 </p>
                 <img :src="safari_image"/>
                 <p>Safari</p>
+                <p class="small-font">※閲覧のみ</p>
               </b-list-group-item>
             </b-list-group>
           </b-card>
@@ -91,7 +90,8 @@
       </b-row>
       <b-row>
         <b-col>
-          Powered by <a href="https://github.com/dyson-yamashita">dyson-yamashita</a>
+          Powered by <a href="https://dyson-yamashita.github.io/winkry-site/">Winkry</a><br>
+          &#169; 2020 Winkry
         </b-col>
       </b-row>
     </b-container>
@@ -100,12 +100,12 @@
 <script>
 export default {
   name: 'Top',
-  data() {
+  data () {
     return {
-      pufu_image: require("../assets/pufu_image.png"), 
-      safari_image: require("../assets/safari.png"),
-      chrome_image: require("../assets/chrome.png") 
-     }
+      pufu_image: require('../assets/pufu_image.png'),
+      safari_image: require('../assets/safari.png'),
+      chrome_image: require('../assets/chrome.png')
+    }
   }
 }
 </script>
@@ -119,5 +119,9 @@ export default {
 }
 .book {
   margin: auto;
+}
+.small-font {
+  font-size: 90%;
+  margin: 0;
 }
 </style>
